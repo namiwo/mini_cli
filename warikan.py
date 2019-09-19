@@ -8,8 +8,8 @@ def main():
     nunber_of_people = int(input("人数>"))
     amount = int(input("金額>"))
     #計算
-    payment = amount // nunber_of_people
-    remainder = amount % nunber_of_people
+
+    payment, remainder = divmod(amount, nunber_of_people)
     #出力
     print("1人あたり" + str(payment) +"円です。端数は" + str(remainder) + "円です。")
     print(f"1人あたり{payment}円です。端数は{remainder}円です。")
